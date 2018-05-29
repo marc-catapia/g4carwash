@@ -20,79 +20,107 @@
 
 	<!-- external font style -->
 	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
 </head>
 <body>
-	<div class="container">
 
 		<nav class="navbar navbar-expand-lg navbar-light">
-
-			<a class="navbar-brand" href="#">
-    			<img src="assets/images/G4 logo trans.png" id="logo" width="25%" height="25%" class="d-inline-block align-top" alt="g4 carwash" img="img-fluid"><span class="company-name">
-    			G4 Carwash and Auto Detail</span>
-  			</a>
-
-		  <!-- <img src="assets/images/g4 logo.jpg" id="logo" class="img-fluid"> -->
-
-		  <!-- <span class="navbar-brand h1">Navbar</span> -->
-		  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <img src="assets/images/G4-logo-trans.png" id="companylogo">
+		  <a class="navbar-brand" id="companyname" href="#">G4 Carwash and Auto-Detail</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
-		  </button> -->
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    <ul class="navbar-nav">
-		      <li class="nav-item dropdown bg-light">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Menu
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#">Home</a>
-		          <a class="dropdown-item" href="#">Gallery</a>
-		          <a class="dropdown-item" href="#">Services</a>
-		          <a class="dropdown-item" href="#">Promos</a>
-		          <a class="dropdown-item" href="#">Contact Us</a>
-		          <a class="dropdown-item" href="#">About Us</a>
-		        </div>
-		      </li>
-		    </ul>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav ml-auto">
+		      <a class="nav-item nav-link active nav-menu" href="#">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link nav-menu" href="#">Gallery</a>
+		      <a class="nav-item nav-link nav-menu" href="#">Services</a>
+		      <a class="nav-item nav-link nav-menu" href="#">Promos</a>
+		      
+		      <!-- Button trigger modal -->
+					<button id="contactus" type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Contact us</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalCenterTitle">Contact Us</h5>
+					        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true"></span>
+					        </button> -->
+					      </div>
+					      <div class="modal-body">
+					        <p>For inquiries you may contact G4 Carwash and Auto-Detail @ 0919-1234567 and look for  	Glennis Gonzales</p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		      
+
+		      <!-- Button trigger modal -->
+					<button id="aboutus" type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter1">About us</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalCenterTitle1">About Us</h5>
+					        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true"></span>
+					        </button> -->
+					      </div>
+					      <div class="modal-body">
+					         <p>G4 Carwash and Auto-Detail was established on 2015.
+					         	Owned and managed by Glennis Gonzales.
+					         	G4 Carwash and Auto-Detail makes sure that every customer gets the quality cleaning that their units deserve.</p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		    </div>
 		  </div>
 		</nav>
 
+
+		
 		<main class="main">
-			<!-- <div class="row">
-				<div class="col-md-12">
-					<p class="catchphrase-line1">You do the driving...</p>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-md-12">
-					<p class="catchphrase-line2">We do the cleaning!</p>
-				</div>
-			</div> -->		
-			
-			<div class="row">
-				<div class="col col-lg-4 col-md-4 col-6">
-					<div class="phrase-box">
-						<div>
-							<p class="catchphrase-line1of1">YOU</p>
-							<p class="catchphrase-line1of2">drive...</p>
+			<div class="bg">
+				<div class="container-fluid">		
+					<div class="row text-right">
+						<div class="col-md-12">
+							<p class="catchphrase"> YOU drive...WE clean...</p>
+						</div>		
+					</div>
+					<div class="row text-center">
+						<div class="col-md-12 carwashing">
+							<img src="assets/images/washing-car.png" id="bg-image" class="img-fluid">	
 						</div>
-						<div>
-							<p class="catchphrase-line2of1">WE</p>
-							<p class="catchphrase-line2of2">clean!!!</p>
+					</div>
+					<div class="row">
+						<div class="col-md-12 imgsponsor">
+							<img src="assets/images/microtex.jpeg" class="img-fluid sponsor">
+							<img src="assets/images/meguiars.jpg" class="img-fluid sponsor">
+							<img src="assets/images/turtle-wax.png" class="img-fluid sponsor">
+							<img src="assets/images/3m.png" class="img-fluid sponsor">
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-4 col-md-8 col-6">
-					<img src="assets/images/washing-car.png" id="bg-image" img="img-fluid">
-				</div>
 			</div>
 		</main>
-
+		
 		<footer id="footer">
 			<p id="copyright">&copy; G4 Carwash &trade;</p>
 		</footer>
-	</div>	
-
+		
 
 
 
