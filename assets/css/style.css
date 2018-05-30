@@ -6,6 +6,7 @@
 	color: #FFF359;
 }
 
+/*header-part*/
 #companylogo {
 	padding-top: 20px;
 	height: 20%;
@@ -34,6 +35,33 @@
 	color: #57574C; /*grayish*/
 	background-color: #FFF359;
 }
+
+.navbar {
+	background-color: #57574C; 
+	/*position: fixed;*/
+}
+
+#aboutus {
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	padding-left:0;
+}
+
+#contactus {
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	padding-left: 0;	
+	/*color: #57574C;*/
+}
+
+#navbarNavAltMarkup>.navbar-nav>.btn{
+	background-color: transparent;
+	/*font-size: 20px;*/
+
+}
+/*end-header*/
 
 .main {
 	/*height: 80vh;*/
@@ -75,25 +103,7 @@
 
 }
 
-.navbar {
-	background-color: #57574C; 
-	/*position: fixed;*/
-}
 
-#aboutus {
-	background-color: transparent;
-	border: none;
-	text-align: left;
-	padding-left:0;
-}
-
-#contactus {
-	background-color: transparent;
-	border: none;
-	text-align: left;
-	padding-left: 0;	
-	/*color: #57574C;*/
-}
 
 #exampleModalCenterTitle {
 	color: #57574C;

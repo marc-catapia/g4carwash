@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Amaranth', sans-serif;
+	color: #FFF359;
+}
+
+#companylogo {
+	padding-top: 20px;
+	height: 20%;
+	width: 20%;
+	/*margin: 20px;*/
+}
+
+#companyname {
+	color: #FFF359;
+	font-size: 2.5em;
+	/*border: 1px solid white;*/
+	/*text-align: center;*/
+	/*padding-bottom: 50px*/
+}
+
+.navbar-brand {
+	color: white;
+
+}
+
+#navbarNavAltMarkup a {
+	color: #FFF359; /*yellow*/
+}
+
+/*#navbarNavAltMarkup a:hover {*/
+#navbarNavAltMarkup>.navbar-nav>.btn:hover {
+	color: #57574C; /*grayish*/
+	background-color: #FFF359;
+}
+
+#navbarNavAltMarkup>.navbar-nav>.btn>a:hover {
+	color: #57574C; /*grayish*/
+}
+
+.navbar {
+	background-color: #57574C; 
+	/*position: fixed;*/
+}
+
+#aboutus {
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	padding-left:0;
+}
+
+#contactus {
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	padding-left: 0;	
+	/*color: #57574C;*/
+}
+
+/*end-header-part*/
+
+/*modal-part*/
+#exampleModalCenterTitle {
+	color: #57574C;
+}
+
+#exampleModalCenterTitle1 {
+	color: #57574C;
+}
+
+.modal-body>p {
+	color: #57574C;
+}
+/*end-modal-part*/
+
+#navbarNavAltMarkup>.navbar-nav>.btn{
+	background-color: transparent;
+	/*font-size: 10px;*/
