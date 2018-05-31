@@ -30,13 +30,22 @@
 	color: #FFF359; /*yellow*/
 }
 
-#navbarNavAltMarkup>.navbar-nav>.btn>a:hover {
-	color: #57574C; /*grayish*/
-}
 #navbarNavAltMarkup a:hover {
 	color: #57574C; /*grayish*/
 	background-color: #FFF359;
 }
+
+
+#navbarNavAltMarkup>.navbar-nav>.btn:hover {
+	color: #57574C; /*grayish*/
+	background-color: #FFF359;
+}
+
+#navbarNavAltMarkup>.navbar-nav>.btn>a:hover {
+	color: #57574C; /*grayish*/
+}
+
+
 
 .navbar {
 	background-color: #57574C; 
@@ -46,16 +55,20 @@
 #aboutus {
 	background-color: transparent;
 	border: none;
-	text-align: left;
+	text-align: center;
 	padding-left:0;
 }
 
 #contactus {
 	background-color: transparent;
 	border: none;
-	text-align: left;
+	text-align: center;
 	padding-left: 0;	
 	/*color: #57574C;*/
+}
+
+.menulinks {
+
 }
 
 /*end-header-part*/
@@ -78,12 +91,34 @@
 	background-color: transparent;
 }
 
+/*background*/
+.main {
+	background-image: url(../images/G4-promo/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.bg-blur {
+	background-color: rgba(0,0,0,0.30);
+}
+/*end background*/
 
+.carousel-item {
+	justify-content: center;
+}
 
+.carousel-item>.slide-img {
+	height: 80vh;
+	width: 80%;
+	margin: auto;
 
+	
+	/*width: 10vw;*/
+}
 
-
+#navbarNavAltMarkup>.navbar-nav>.btn{
+	background-color: transparent;
+}
 
 
 
@@ -105,18 +140,53 @@
 #footer {
 	background-color: #57574C;
 	height: 100px;
-	position: relative;
+	/*position: relative;*/
 
 	/*border-radius: 20px;*/
 }
 
 #copyright {
-	padding-top: 40px;
-	padding-left: 20px;
-	/*position: absolute;
-	bottom: 20px;
-	right: 85vw;*/
+	padding-top: 20px;
+	text-align: center;
+	
+}
 
+.sociallinks {
+	display: inline;
+	/*text-align: center;*/
+
+}
+
+.soclink {
+	text-align: center;
+}
+
+.fab {
+	/*height: 20px;*/
+	/*width: 20px;*/
+	padding: 5px;
+	font-size: 20px;
+	text-decoration: none;
+}	
+
+.fa-facebook-square {
+	background-color: rgb(59, 89, 152);
+	color: white;
+}
+
+.fa-twitter-square {
+	background-color: rgb(29, 161, 242);
+	color: white;
+}
+
+.fa-instagram {
+	background-color: rgb(195, 42, 163);
+	color: white;
+}
+
+.fa-youtube {
+	background-color: rgb(255, 0, 0);
+	color: white;
 }
 /*end-footer-part*/
 
@@ -176,11 +246,11 @@
 /*mobile phone*/
 @media only screen and (max-width: 450px) {
 	#companyname {
-		font-size: 1em;
+		display: none;
 	}
 
 	.main {
-		height: 75vh;
+		height: 80vh;
 	}
 
 	.d-block {

@@ -93,6 +93,20 @@
 	background-color: rgba(0,0,0,0.30);
 }
 
+#intro-card {
+	border:	none;
+	/*font-size: 20px;*/
+}
+
+.menus:hover {
+	text-decoration: none;	
+}
+
+#contactus,
+#aboutus {
+	padding-left: 10px;
+}
+
 .card {
 	margin: 10px 0;
 	/*background-color: transparent;	*/
@@ -103,14 +117,22 @@
 }
 
 .card-package {
-	height: 50vh;
+	height: 450px;
 	/*background-color: transparent;*/
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+}
+
+.card-header {
+	padding: 0;
 }
 
 .card-header>p {
 	font-size: 2em;
 	text-align: center;
-	background-color: 
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: rgba(0,0,0,0.30); 
 }
 
 .card-body>p {
@@ -141,6 +163,10 @@
 	font-size: 3em;
 }
 
+.back2zero {
+	font-size: 13px;
+
+}
 
 
 
@@ -154,20 +180,56 @@
 #footer {
 	background-color: #57574C;
 	height: 100px;
-	position: relative;
+	/*position: relative;*/
 
 	/*border-radius: 20px;*/
 }
 
 #copyright {
-	padding-top: 40px;
-	padding-left: 20px;
-	/*position: absolute;
-	bottom: 20px;
-	right: 85vw;*/
+	padding-top: 20px;
+	text-align: center;
+	
+}
+
+.sociallinks {
+	display: inline;
+	/*text-align: center;*/
 
 }
+
+.soclink {
+	text-align: center;
+}
+
+.fab {
+	/*height: 20px;*/
+	/*width: 20px;*/
+	padding: 5px;
+	font-size: 20px;
+	text-decoration: none;
+}	
+
+.fa-facebook-square {
+	background-color: rgb(59, 89, 152);
+	color: white;
+}
+
+.fa-twitter-square {
+	background-color: rgb(29, 161, 242);
+	color: white;
+}
+
+.fa-instagram {
+	background-color: rgb(195, 42, 163);
+	color: white;
+}
+
+.fa-youtube {
+	background-color: rgb(255, 0, 0);
+	color: white;
+}
 /*end-footer-part*/
+
 
 
 
@@ -217,7 +279,7 @@
 /*mobile phone*/
 @media only screen and (max-width: 450px) {
 	#companyname {
-		font-size: 1em;
+		display: none;
 	}
 
 	.main,
@@ -243,7 +305,11 @@
 
 	.main,
 	.bg-blur {
-		height: 120vh;
+		height: 260vh;
+	}
+
+	.card-package {
+		height: 600px;
 	}
 
 }	
