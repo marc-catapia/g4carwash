@@ -60,6 +60,15 @@
 	/*color: #57574C;*/
 }
 
+.menus:hover {
+	text-decoration: none;	
+}
+
+#contactus,
+#aboutus {
+	padding-left: 10px;
+}
+
 /*end-header-part*/
 
 /*modal-part*/
@@ -229,6 +238,14 @@ div>.card {
 .fa-youtube {
 	background-color: rgb(255, 0, 0);
 	color: white;
+}
+
+.soclink {
+	margin-bottom: 0;
+}
+
+#copyright {
+	margin-bottom: 10px;
 }
 /*end-footer-part*/
 

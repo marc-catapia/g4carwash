@@ -228,6 +228,14 @@
 	background-color: rgb(255, 0, 0);
 	color: white;
 }
+
+.soclink {
+	margin-bottom: 0;
+}
+
+#copyright {
+	margin-bottom: 10px;
+}
 /*end-footer-part*/
 
 
@@ -305,11 +313,11 @@
 
 	.main,
 	.bg-blur {
-		height: 260vh;
+		height: 125vh;
 	}
 
 	.card-package {
-		height: 600px;
+		height: 52vh;
 	}
 
 }	
