@@ -67,9 +67,6 @@
 	/*color: #57574C;*/
 }
 
-.menulinks {
-
-}
 
 /*end-header-part*/
 
@@ -91,6 +88,15 @@
 	background-color: transparent;
 }
 
+.menus:hover {
+	text-decoration: none;	
+}
+
+#contactus,
+#aboutus {
+	padding-left: 10px;
+}
+
 /*background*/
 .main {
 	background-image: url(../images/G4-promo/bg.jpg);
@@ -103,35 +109,17 @@
 }
 /*end background*/
 
-.carousel-item {
-	justify-content: center;
-}
-
 .carousel-item>.slide-img {
-	height: 80vh;
-	width: 80%;
-	margin: auto;
-
-	
-	/*width: 10vw;*/
+	/*margin-top: 20px;*/
+	/*margin-bottom: 20px;*/
+	height: 65vh;
 }
 
-#navbarNavAltMarkup>.navbar-nav>.btn{
-	background-color: transparent;
+#carsl-in {
+	height: 65vh;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -187,6 +175,14 @@
 .fa-youtube {
 	background-color: rgb(255, 0, 0);
 	color: white;
+}
+
+.soclink {
+	margin-bottom: 0;
+}
+
+#copyright {
+	margin-bottom: 10px;
 }
 /*end-footer-part*/
 
@@ -250,7 +246,7 @@
 	}
 
 	.main {
-		height: 80vh;
+		height: 73.5vh;
 	}
 
 	.d-block {
@@ -262,12 +258,24 @@
 		text-align: right;
 	}
 
+	#carouselExampleIndicators {
+		margin-top: 7vh;
+	}
+
+	.carousel-item>.slide-img {
+		height: 60vh;
+	}
+
+	#footer {
+		height: 105px;
+	}
+
 }
 
 /*tablets*/
 @media (min-width:451px) and (max-width: 768px) {
 	.main {
-		height: 80vh;
+		height: 79vh;
 	}
 
 	.d-block {
@@ -277,5 +285,13 @@
 
 	#navbarNavAltMarkup>.navbar-nav>.btn {
 		text-align: right;
+	}
+
+	#carouselExampleIndicators {
+		margin-top: 7vh;
+	}
+
+	#footer {
+		height: 105px;
 	}
 }	
