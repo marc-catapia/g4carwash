@@ -102,6 +102,7 @@
 	background-image: url(../images/G4-promo/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 680px;
 }
 
 .bg-blur {
@@ -246,7 +247,7 @@
 	}
 
 	.main {
-		height: 73.5vh;
+		height: 501px;
 	}
 
 	.d-block {
@@ -275,7 +276,7 @@
 /*tablets*/
 @media (min-width:451px) and (max-width: 768px) {
 	.main {
-		height: 79vh;
+		height: 828px;
 	}
 
 	.d-block {
