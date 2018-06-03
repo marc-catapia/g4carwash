@@ -164,8 +164,7 @@
 	margin: auto;
 	width: 200px;
 	margin-top: 10px;
-	/*margin-bottom: 10px;*/
-	/*display: block;*/
+	animation-iteration-count: infinite;
 }
 
 #emailHelp {
