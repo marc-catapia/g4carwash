@@ -8,7 +8,7 @@
 
 /*header-part*/
 #companylogo {
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 	height: 20%;
 	width: 20%;
 	/*margin: 20px;*/
@@ -83,18 +83,12 @@
 /*end-header*/
 
 .main {
-	height: 680px;
-	/*height: 70vh;*/
-	/*background-color: #FFF359;*/
+	/*height: 680px;*/
+	height: 640px;
 	background-image: url(../images/bg.jpg);
 	background-color: rgba(255, 255, 255, 1);
 	background-size: cover;
 }
-
-/*.bg {
-	background-color: rgba(0,0,0,.25);
-	height: 70vh;
-}*/
 
 .catchphrase {
 	/*color: #57574C;*/
@@ -102,63 +96,65 @@
 	font-family: 'Kaushan Script', cursive;
 }
 
-#bg-image {
-	/*height: 50%;
-	width: 50%;*/
-	/*height: 95%;
-	width: 95%;*/
-	/*padding-top: 10%;*/
-	/*padding-left: 2%;*/
-	/*border: 1px solid black;	*/
-}
 
 
-#copyright {
-	padding-top: 40px;
-	padding-left: 20px;
-	/*position: absolute;
-	bottom: 20px;
-	right: 85vw;*/
-
-}
-
-
-
-#exampleModalCenterTitle {
+/*modal-part*/
+.modal-title {
 	color: #57574C;
+} 
+
+.modal-body {
+	color: #FFF359;
+	background-color: #57574C;
 }
 
-#exampleModalCenterTitle1 {
-	color: #57574C;
+.modalClose {
+	color: #FFF359;
 }
 
-.modal-body>p {
-	color: #57574C;
+.modalClosebtn,
+.modalSubsbtn {
+	background-color: #57574C;		
 }
+/*end modal-part*/
 
 .sponsor1 {
 	padding-top: 20vh;
 	padding-bottom: 10px;
 }
 
-/*.imgsponsor {
-	padding-top: 30vh;
-}*/
 
 /*footer-part*/
 #footer {
 	background-color: #57574C;
-	height: 100px;
-	/*position: relative;*/
-
-	/*border-radius: 20px;*/
-}
-
-#copyright {
-	padding-top: 20px;
+	height: 140px;
 	text-align: center;
-	
 }
+
+/*subscribe button modal*/
+#subscribe {
+	color: #57574C;
+	text-align: center;
+	background-color: #FFF359; 
+	margin: auto;
+	width: 200px;
+	margin-top: 10px;
+	animation-iteration-count: infinite;
+}
+
+#emailHelp {
+	color: white;
+}
+
+.notation {
+	display: block;
+}
+
+em {
+	color: white;
+}
+/* end subscribe button modal*/
+
 
 .sociallinks {
 	display: inline;
@@ -167,12 +163,10 @@
 }
 
 .soclink {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .fab {
-	/*height: 20px;*/
-	/*width: 20px;*/
 	padding: 5px;
 	font-size: 20px;
 	text-decoration: none;
@@ -256,7 +250,7 @@
 
 	.main, 
 	.bg {
-		height: 503px;
+		height: 471px;
 		background-size: cover;
 	}
 
@@ -264,24 +258,18 @@
 		text-align: right;
 	}
 
-	#footer {
-		height: 103px;
-	}
-
 	#bg-image {
 		padding-bottom: 3vh;
 	}
 
 	.sponsor1 {
-		padding-top: 20vh;
+		padding-top: 15vh;
 	/*	height: 50%;
 		width: 50%;	*/
 	}
 
-	.sponsor2 {
-		/*padding-top: 8vh;*/
-		/*height: 50%;*/
-		/*width: 50%;	*/
+	iframe {
+		width: 325px;
 	}
 
 }
@@ -306,7 +294,7 @@
 
 	.main, 
 	.bg {
-		height: 828px;
+		height: 798px;
 		background-size: cover;
 	}
 
@@ -320,10 +308,6 @@
 
 	#navbarNavAltMarkup>.navbar-nav>.btn {
 		text-align: right;
-	}
-
-	#footer {
-		height: 105px;
 	}
 
 	#bg-image {

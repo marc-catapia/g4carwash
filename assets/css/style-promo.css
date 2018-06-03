@@ -7,7 +7,7 @@
 }
 
 #companylogo {
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 	height: 20%;
 	width: 20%;
 	/*margin: 20px;*/
@@ -63,16 +63,22 @@
 /*end-header-part*/
 
 /*modal-part*/
-#exampleModalCenterTitle {
+.modal-title {
 	color: #57574C;
+} 
+
+.modal-body {
+	color: #FFF359;
+	background-color: #57574C;
 }
 
-#exampleModalCenterTitle1 {
-	color: #57574C;
+.modalClose {
+	color: #FFF359;
 }
 
-.modal-body>p {
-	color: #57574C;
+.modalSubsbtn,
+.modalClosebtn {
+	background-color: #57574C;		
 }
 /*end-modal-part*/
 
@@ -122,6 +128,14 @@
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.30);
 }
 
+.card-package:hover {
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.30);	
+}
+
+.card-package-bottom {
+	margin-bottom: 50px;
+}
+
 .card-header {
 	padding: 0;
 }
@@ -165,31 +179,39 @@
 
 .back2zero {
 	font-size: 13px;
-
 }
-
-
-
-
-
-
-
 
 
 /*footer-part*/
 #footer {
 	background-color: #57574C;
-	height: 100px;
-	/*position: relative;*/
-
-	/*border-radius: 20px;*/
-}
-
-#copyright {
-	padding-top: 20px;
+	height: 140px;
 	text-align: center;
-	
 }
+
+/*subscribe button modal*/
+#subscribe {
+	color: #57574C;
+	text-align: center;
+	background-color: #FFF359; 
+	margin: auto;
+	width: 200px;
+	margin-top: 10px;
+	animation-iteration-count: infinite;
+}
+
+#emailHelp {
+	color: white;
+}
+
+.notation {
+	display: block;
+}
+
+em {
+	color: white;
+}
+/* end subscribe button modal*/
 
 .sociallinks {
 	display: inline;
@@ -292,15 +314,24 @@
 
 	.main,
 	.bg-blur {
-		height: 370vh;
+		height: 390vh;
+		background-size: cover;
 	}
 
 	.card-package {
-		height: 80vh;
+		height: 85vh;
 	}
 
 	#navbarNavAltMarkup>.navbar-nav>.btn {
 		text-align: right;
+	}
+
+	.card-package-bottom {
+		margin-bottom: 10px;
+	}
+
+	iframe {
+		width: 325px;
 	}
 }
 
@@ -314,10 +345,10 @@
 	.main,
 	.bg-blur {
 		height: 125vh;
+		background-size: cover;
 	}
 
 	.card-package {
 		height: 52vh;
 	}
-
 }	

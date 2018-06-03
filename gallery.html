@@ -8,11 +8,12 @@
 
 	<title></title>
 
-	<!-- external stylesheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style-gallery.css">
 
 	<!-- boostrap css -->	
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-gallery.css">
 
 	<!-- favicon -->	
 	<!-- <link rel="icon" type="image/gif/png" href="assets/images/car.png"> -->
@@ -24,9 +25,8 @@
 	<!-- fomtawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-
-
-
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
 
 </head>
 <body>
@@ -34,20 +34,15 @@
 		<nav class="navbar navbar-expand-lg navbar-light">
 		  	<img src="assets/images/G4-logo-trans.png" id="companylogo">
 
-		  	<a class="navbar-brand" id="companyname" href="#">G4 Carwash and Auto-Detail</a>
+		  	<a class=" nav navbar-brand" id="companyname" href="#">G4 Carwash and Auto-Detail</a>
 		  
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  	</button>
 		  
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav ml-auto">
-		    	<!-- <ul class="nav navbar-nav">
-			      <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-			      <li class="disabled"><a href="#">Gallery</a></li>
-			      <li><a href="#">Services</a></li>
-			      <li><a href="#">Promos</a></li>
-			    </ul> -->
+		    <div class="nav navbar-nav ml-auto">
+
 			    <button class="btn"><a  class="menus" href="index.html">Home</a></button>  
 			    <button class="btn btn-default"><a class="menus" href="gallery.html">Gallery</a></button>  
 			    <button class="btn btn-default"><a class="menus" href="services.html">Services</a></button>  
@@ -60,22 +55,20 @@
 					<!-- Modal -->
 					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
-					    <div class="modal-content">
+					    <div class="modal-content" id="contactusmodal">
 					      <div class="modal-header">
 					        <h5 class="modal-title" id="exampleModalCenterTitle">Contact Us</h5>
-					        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true"></span>
-					        </button> -->
 					      </div>
 					      <div class="modal-body">
-					        <p>For inquiries you may contact G4 Carwash and Auto-Detail @ 0919-1234567 and look for  	Glennis Gonzales</p>
+					        <p>For inquiries you may contact G4 Carwash and Auto-Detail @ 0919-1234567 and look for Glennis Gonzales</p>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-secondary modalClosebtn" data-dismiss="modal"><span class="modalClose">Close</span></button>
 					      </div>
 					    </div>
 					  </div>
 					</div>
+		      
 
 		      <!-- Button trigger modal -->
 					<button id="aboutus" type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter1">About us</button>
@@ -86,17 +79,20 @@
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <h5 class="modal-title" id="exampleModalCenterTitle1">About Us</h5>
-					        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true"></span>
-					        </button> -->
 					      </div>
 					      <div class="modal-body">
 					         <p>G4 Carwash and Auto-Detail was established on 2015.
 					         	Owned and managed by Glennis Gonzales.
 					         	G4 Carwash and Auto-Detail makes sure that every customer gets the quality cleaning that their units deserve.</p>
+					         <hr>	
+					         <p>G4 Carwash and Auto-Detail is located along National Rd. Brgy. Tabon, Pulilan, Bulacan. A few meters away from Nestle Pulilan Plant</p>
+					         <hr>
+					         <div class="map">
+					         	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3856.7593216277514!2d120.82253081440092!3d14.90826368960708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1528011521651" width="465" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+					         </div>	
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-secondary modalClosebtn" data-dismiss="modal"><span class="modalClose">Close</span></button>
 					      </div>
 					    </div>
 					  </div>
@@ -111,23 +107,29 @@
 		<div class="container-fluid">
  
 			<div class="row">
-				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-10 offset-1 carouselMain">
 					<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
 						  <ol class="carousel-indicators">
 						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
 						  </ol>
 
 						  <div class="carousel-inner" id="carsl-in">
-						  	<div class="carousel-item">
+						  	<div class="carousel-item active">
 		  						<img class="d-block slide-img" src="assets/images/G4-gallery/6.jpg" alt="first slide">
 			  					<div class="carousel-caption d-none d-md-block">
 			    					<h5>G4 Carwash Sign</h5>
 			    					<p>Large signage that can be easily seen by customers</p>
 			  					</div>
 						    </div>
-						  	<div class="carousel-item active">
+						  	<div class="carousel-item">
 		  						<img class="d-block slide-img" src="assets/images/G4-gallery/7.jpg" alt="second slide">
 			  					<div class="carousel-caption d-none d-md-block">
 			    					<h5>G4 Carwash Bubble Wash</h5>
@@ -135,7 +137,6 @@
 			  					</div>
 						    </div>
 						    <div class="carousel-item">
-		  						<!-- <img class="d-block w-100 slide-img" src="assets/images/G4-gallery/8.jpg" alt="third slide"> -->
 		  						<img class="d-block slide-img" src="assets/images/G4-gallery/8.jpg" alt="third slide">
 			  					<div class="carousel-caption d-none d-md-block">
 			    					<h5>G4 Carwash Cleaning Process</h5>
@@ -189,6 +190,7 @@
 
 						  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <!-- <i class="fas fa-chevron-square-left"></i> -->
 						    <span class="sr-only">Previous</span>
 						  </a>
 						  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
@@ -197,6 +199,7 @@
 						  </a>
 					</div>
 				</div>
+
 			</div>
 		</div>
 
@@ -204,6 +207,46 @@
 
 
 	<footer id="footer">
+
+			<button id="subscribe" type="button" class="btn wow swing" data-toggle="modal" data-target="#exampleModalCenter2">Subscribe</button>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content" id="subscribemodal">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalCenterTitle2">Subscription</h5>
+			      </div>
+			      <div class="modal-body">
+			        
+			      	<form>
+						<div class="form-group">
+						    <label for="inputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						    <small id="emailHelp" class="form-text text-muted"><em>G4 Carwash will never share your email with anyone else.</em></small>
+						</div>
+						<div class="form-group">
+						    <label for="firstName">First Name</label>
+						    <input type="input" class="form-control" id="firstName" placeholder="First Name">
+						</div>
+						<div class="form-group">
+						    <label for="lastName">Last Name</label>
+						    <input type="input" class="form-control" id="lastName" placeholder="Last Name">
+						</div>
+						<!-- <button type="submit" class="btn btn-primary">Subscribe</button> -->
+					</form>
+
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary modalSubsbtn" data-dismiss="modal"><span class="modalClose">Subscribe</span></button>
+			        <button type="button" class="btn btn-secondary modalClosebtn" data-dismiss="modal"><span class="modalClose">Close</span></button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<small class="notation"><em>To get the latest updates and promos</em></small>
+
 			<p id="copyright">&copy; G4 Carwash&trade; 2018</p>
 			<ul class="soclink">
 				<li class="sociallinks"><a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
@@ -246,7 +289,11 @@
 
 
 
-
+	<!-- wow js -->
+          <script src="assets/js/wow.min.js"></script>
+          <script>
+          new WOW().init();
+          </script>	
 
 
 	<!-- external custom js -->
