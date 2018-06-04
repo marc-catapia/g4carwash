@@ -335,6 +335,10 @@ em {
 		background-size: cover;
 	}
 
+	.text {
+		width: 300px;
+		height: 180px;
+	}
 }	
 
 	
